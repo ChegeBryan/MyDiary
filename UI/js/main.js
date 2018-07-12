@@ -6,4 +6,3 @@ function hidePassword() {
     var x = document.getElementById("password");
     x.type = 'password';
 }
-

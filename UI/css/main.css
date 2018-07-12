@@ -29,6 +29,9 @@ body{
 a{
     text-decoration: none;
 }
+ul{
+    list-style: none;
+}
 /*=======================================
  *
  *  Font-styles
@@ -72,6 +75,9 @@ header{
     margin-left: auto;
     margin-right: auto;
 }
+.mr-tp{
+    margin-top: 30%;
+}
 .pd-lr{
     padding-left: 16px;
     padding-right: 16px ;
@@ -97,6 +103,10 @@ header{
 .rd-8{
     border-radius: 8px;
 }
+.rd-tp{
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
 
 /*=================================================
 *
@@ -105,6 +115,11 @@ header{
  ==================================================*/
 .card {
    box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2), 0 4px 20px 0 rgba(0,0,0,0.19);
+    transition: 0.3s;
+}
+.card-hover:hover{
+    box-shadow: 0 8px 20px 0 rgba(0,0,0,0.2), 0 8px 40px 0 rgba(0,0,0,0.19);
+    cursor: pointer;
 }
 .bg-white{
     background-color: #ffffff;
@@ -115,7 +130,13 @@ header{
 .c-white{
     color: white;
 }
-
+.card-h3, .card-p{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.bg-gd{
+    background: linear-gradient(#8B4513, #DBB044);
+}
 /*===========================================================
 *
 *   Grid and Positioning
@@ -147,6 +168,7 @@ header{
 .pst-abs{
     position: absolute;
 }
+
 .pst-st-ft{
     position: fixed;
     bottom: 0;
@@ -215,16 +237,36 @@ label{
     background-color: #CB9B3F;
 }
 
+.img-rwd{
+    width: 100%;
+    height: auto;
+}
+.pagination {
+    display: inline-block;
+    text-align: center;
+}
+.pagination a{
+    color: #8B4513;
+    padding: 8px 16px;
+}
+
+.pagination a.active{
+    background-color: #CB9B3F;
+    color: white;
+}
+.pagination a:hover:not(.active){
+    background-color: #CB9B3F;
+}
+
 /*====================================================
 *
 *   Responsive
 *
  ======================================================*/
-
-@media only screen and (max-width: 600px) {
-    .hide-sm{
+ @media only screen and (max-width: 600px) {
+     .hide-sm{
         display: none;
-    }
+     }
 }
 
 @media only screen and (min-width: 600px) {
@@ -252,7 +294,7 @@ label{
 
     .txt-l-rwd{
         text-align: left;
-    }    .flex-8 {flex: 66.66%;}
+    }
 
     .hide-md{
         display: none;
