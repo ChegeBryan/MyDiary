@@ -1,0 +1,270 @@
+/*=====================================================
+ *
+ *  A little House Keeping
+ *
+ =====================================================*/
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    height: 100%;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.5;
+}
+
+.container{
+    max-width: 1012px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 0;
+}
+.bg-1{
+    height: 100%;
+    background: url("../img/sm.jpg") no-repeat fixed center;
+    background-size: cover;
+
+}
+a{
+    text-decoration: none;
+}
+/*=======================================
+ *
+ *  Font-styles
+ *
+ =========================================*/
+
+header{
+    font-size: 16px;
+}
+
+.pac-font{
+    font-family: 'Pacifico', cursive;
+}
+
+.navbar-brand{
+    font-size: 24px;
+}
+
+.txt-cap{
+    text-transform: capitalize;
+}
+
+.txt-ct{
+    text-align: center;
+}
+
+/*==============================================
+*
+* Margins, Padding and Border-radius
+*
+ ============================================*/
+
+.mr-16{
+    margin: 16px;
+}
+.mr-lr{
+    margin-left: 4px;
+    margin-right: 4px;
+}
+.pd-lr{
+    padding-left: 16px;
+    padding-right: 16px ;
+}
+.pd-4{
+    padding: 4px;
+}
+.pd-8{
+    padding: 8px;
+}
+.pd-16{
+    padding: 16px;
+}
+.pd-32{
+    padding: 32px;
+}
+.rd-4{
+    border-radius: 4px;
+}
+.rd-6{
+    border-radius: 6px;
+}
+.rd-8{
+    border-radius: 8px;
+}
+
+/*=================================================
+*
+*       CARDS and COLORS
+*
+ ==================================================*/
+.card {
+   box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2), 0 4px 20px 0 rgba(0,0,0,0.19);
+}
+.bg-white{
+    background-color: #ffffff;
+}
+.c-brown{
+    color: #8B4513;
+}
+.c-white{
+    color: white;
+}
+
+/*===========================================================
+*
+*   Grid and Positioning
+*
+ ========================================================*/
+
+.fx-d{
+    display: flex;
+}
+.fx-ct-items{
+    align-items: center;
+}
+.fx-j-ct{
+    justify-content: center;
+}
+.fx-col{
+    flex-direction: column;
+}
+.fx-j-btw{
+    justify-content: space-between;
+}
+.fx-j-ard{
+    justify-content: space-around;
+}
+
+.pst-rv{
+    position: relative;
+}
+.pst-abs{
+    position: absolute;
+}
+.pst-st-ft{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+.tog-pwd{
+    position: absolute;
+    top: 132px;
+    right: 10px;
+}
+
+/*=====================================================
+*
+*   Form Inputs and Buttons
+*
+ =======================================================*/
+.form-input{
+    width: 100%;
+    padding: 10px;
+    margin: 20px 0 20px 0;
+    display: block;
+    font-size: 16px;
+    border: 1px solid #808080;
+    outline: none;
+}
+.form-input:focus{
+    border: 1px solid #CB9B3F;
+    border-radius: 8px;
+}
+label{
+    display: none;
+}
+
+.btn{
+    color: white;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+.btn-sm{
+    padding: 4px 8px;
+}
+.btn-md{
+    padding: 10px 12px;
+}
+.btn-c-1{
+    color: #ffffff;
+    background-color: #8B4513;
+    border: 1px solid #cb9b3f;
+}
+.btn-blk{
+    width: 100%;
+}
+.btn:hover{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    background-color: #CB9B3F;
+    color: white;
+}
+.btn:focus{
+    outline: none;
+    background-color: #CB9B3F;
+}
+
+/*====================================================
+*
+*   Responsive
+*
+ ======================================================*/
+
+@media only screen and (max-width: 600px) {
+    .hide-sm{
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .fx-col-rwd{
+        flex-direction: row;
+    }
+
+    .fx-1 {flex: 8.33%;}
+    .fx-2 {flex: 16.66%;}
+    .fx-3 {flex: 25%;}
+    .fx-4 {flex: 33.33%;}
+    .fx-5 {flex: 41.66%;}
+    .fx-6 {flex: 50%;}
+    .fx-7 {flex: 58.33%;}
+    .fx-8 {flex: 66.66%;}
+    .fx-9 {flex: 75%;}
+    .fx-10 {flex: 83.33%;}
+    .fx-11 {flex: 91.66%;}
+    .fx-12 {flex: 100%;}
+
+    .txt-l-rwd{
+        text-align: left;
+    }    .flex-8 {flex: 66.66%;}
+
+    .hide-md{
+        display: none;
+    }
+    .pd-tp-64-rwd{
+        padding-top: 64px;
+        padding-bottom: 64px;
+    }
+}
+
+
+@media only screen and (min-width: 992px) {
+    .pd-tp-96-rwd{
+        padding-top: 96px;
+        padding-bottom: 96px;
+
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+
+}
