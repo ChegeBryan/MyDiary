@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="css/main.css">
 
 </head>
-<body class="bg-1 pst-rv">
+<body class="bg-1">
 <div class="container">
     <header class="fx-d fx-j-btw pd-16 txt-cap">
         <div class="">
@@ -45,14 +45,16 @@
 
 
         <div class="fx-5 card bg-white rd-8 pd-16 mr-16 hide-sm">
-            <form action="" class="pst-rv">
+            <form action="view-entries.html" class="pst-rv">
                 <label for="username">User name</label>
                 <input type="text" class="form-input rd-8" id="username" name="uname" placeholder="Username" required>
                 <label for="email">Email</label>
                 <input type="email" name="email" id="email" class="form-input rd-8" placeholder="Your email" required>
-                <label for="password">Password</label>
-                <input type="password" id="password" name="pwd" class="form-input rd-8" placeholder="Enter password" required>
-                <i class="fa fa-eye fa-lg c-brown tog-pwd" onmouseover="showPassword()" onmouseout="hidePassword()"></i>
+                <div class="pst-rv">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="pwd" class="form-input rd-8" placeholder="Enter password" required>
+                    <i class="fa fa-eye fa-lg c-brown tog-pwd" onmouseover="showPassword()" onmouseout="hidePassword()"></i>
+                </div>
                 <button type="submit" class="btn btn-blk btn-md rd-8 btn-c-1">Create Account</button>
                 <p>Already have an account? <a href="login.html" class="c-brown" >Log in</a></p>
             </form>
